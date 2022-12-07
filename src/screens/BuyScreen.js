@@ -1,4 +1,7 @@
+// Modules
 import { useNavigate } from "react-router-dom";
+
+// Assets
 import "../assets/css/buyScreen.css";
 
 function BuyScreen() {

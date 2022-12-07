@@ -7,8 +7,8 @@ import "../assets/css/wishlistGames.css";
 
 // Redux
 import { removeFromCart } from "./../features/users/usersSlice";
-import { addToCart, removeFromWishlist, selectUserDetails } from "../features/users/usersSlice";
 import { removeFromFilteredGames, selectSearchMode } from "../features/search/SearchSlice";
+import { addToCart, removeFromWishlist, selectUserDetails } from "../features/users/usersSlice";
 
 function WishlistGame(props) {
     const dispatch = useDispatch();

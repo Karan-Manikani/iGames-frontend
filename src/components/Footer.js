@@ -1,3 +1,4 @@
+// Assets
 import "../assets/css/footer.css";
 
 function Footer() {
@@ -13,7 +14,7 @@ function Footer() {
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
 
-                <a href="">
+                <a href="https://github.com/Karan-Manikani">
                     <ion-icon name="logo-github"></ion-icon>
                 </a>
             </div>

@@ -1,11 +1,11 @@
 // Modules
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 // Assets
 import "../assets/css/header.css";
 
 // Redux
-import { useSelector } from "react-redux";
 import { selectUserDetails } from "../features/users/usersSlice";
 
 function Header() {

@@ -1,8 +1,10 @@
+// Modules
+import { useDispatch, useSelector } from "react-redux";
+
 // Assets
 import "../assets/css/paginate.css";
 
 // Redux
-import { useDispatch, useSelector } from "react-redux";
 import { getPageNumber, getTotalPages, nextPage, prevPage } from "../features/games/gamesSlice";
 
 function Paginate() {

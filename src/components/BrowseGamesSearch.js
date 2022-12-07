@@ -1,5 +1,7 @@
-// Redux
+// Modules
 import { useDispatch } from "react-redux";
+
+// Redux
 import { fetchGames } from "../features/games/gamesSlice";
 
 function BrowseGamesSearch(props) {

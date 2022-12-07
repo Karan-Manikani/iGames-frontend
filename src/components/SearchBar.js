@@ -1,12 +1,17 @@
+// Modules
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+
+// Assets
 import "../assets/css/searchbar.css";
-import { clearFilteredGames, populateFilteredGames, searchModeOff, searchModeOn } from "../features/search/SearchSlice";
-import { selectSearchMode } from "../features/search/SearchSlice";
+
+// Redux
+import { selectCart } from "./../features/cart/cartSlice";
 import { selectUserDetails } from "../features/users/usersSlice";
 import { getWishlist } from "../features/wishlist/wishlistSlice";
-import { selectCart } from "./../features/cart/cartSlice";
+import { selectSearchMode } from "../features/search/SearchSlice";
 import { fetchGames, getPageNumber } from "./../features/games/gamesSlice";
+import { clearFilteredGames, populateFilteredGames, searchModeOff, searchModeOn } from "../features/search/SearchSlice";
 
 function SearchBar(props) {
     const dispatch = useDispatch();

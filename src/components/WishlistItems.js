@@ -7,12 +7,12 @@ import "../assets/css/wishlistScreen.css";
 
 // Components
 import WishlistGame from "../components/WishlistGame";
-import { clearFilteredGames, selectFilteredGames, selectSearchMode } from "../features/search/SearchSlice";
 
 // Redux
 import { selectUserDetails } from "../features/users/usersSlice";
-import { loadWishlist } from "./../features/wishlist/wishlistSlice";
 import { getWishlist } from "./../features/wishlist/wishlistSlice";
+import { loadWishlist } from "./../features/wishlist/wishlistSlice";
+import { clearFilteredGames, selectFilteredGames, selectSearchMode } from "../features/search/SearchSlice";
 
 function WishlistItems() {
     const dispatch = useDispatch();

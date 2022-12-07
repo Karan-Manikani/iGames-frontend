@@ -1,9 +1,12 @@
-import xboxIcon from "../assets/images/xbox.svg";
-import playstationIcon from "../assets/images/playstation.svg";
-import windowsIcon from "../assets/images/windows.svg";
-import "../assets/css/game.css";
+// Modules
 import parse from "html-react-parser";
 import { Link } from "react-router-dom";
+
+// Assets
+import "../assets/css/game.css";
+import xboxIcon from "../assets/images/xbox.svg";
+import windowsIcon from "../assets/images/windows.svg";
+import playstationIcon from "../assets/images/playstation.svg";
 
 function Game(props) {
     function renderPlatforms() {

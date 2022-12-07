@@ -2,7 +2,6 @@
 import parse from "html-react-parser";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -15,6 +14,7 @@ import windowsIcon from "../assets/images/windows.svg";
 
 // Components
 import Error from "../components/Error";
+import Carousel from "react-bootstrap/Carousel";
 
 // Redux
 import { addToCart, removeFromCart, selectUserDetails } from "../features/users/usersSlice";

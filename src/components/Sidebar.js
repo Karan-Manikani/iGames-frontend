@@ -1,5 +1,8 @@
-import "../assets/css/sidebar.css";
+// Modules
 import { useState } from "react";
+
+// Assets
+import "../assets/css/sidebar.css";
 
 function Sidebar() {
     const [sidebarOpen, setSidebarOpen] = useState(false);

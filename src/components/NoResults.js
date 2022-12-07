@@ -1,4 +1,7 @@
+// Components
 import BrowseGamesSearch from "./BrowseGamesSearch";
+
+// Assets
 import "../assets/css/noResults.css";
 
 function NoResults(props) {

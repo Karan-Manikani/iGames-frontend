@@ -1,6 +1,11 @@
+// Modules
 import { Link } from "react-router-dom";
-import "../assets/css/searchLinks.css";
+
+// Components
 import SearchBar from "./SearchBar";
+
+// Assets
+import "../assets/css/searchLinks.css";
 
 function SearchLinks(props) {
     return (

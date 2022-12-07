@@ -1,9 +1,16 @@
+// Modules
 import React from "react";
 import ReactDOM from "react-dom/client";
+
+// Components
 import App from "./App";
+
+// Redux
 import store from "./app/store";
 import { Provider } from "react-redux";
 import { loadProfile } from "./features/users/usersSlice";
+
+// Authentication
 import setAuthToken from "./utils/setAuthToken";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

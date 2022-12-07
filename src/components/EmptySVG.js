@@ -1,4 +1,4 @@
-// Imports
+// Modules
 import { Link } from "react-router-dom";
 
 // Assets

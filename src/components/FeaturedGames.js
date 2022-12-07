@@ -1,5 +1,9 @@
+// Modules
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+
+// Components
 import Carousel from "react-bootstrap/Carousel";
 import Error from "../components/Error";
 
@@ -8,7 +12,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../assets/css/featuredGames.css";
 
 // Redux
-import { useDispatch, useSelector } from "react-redux";
 import {
     selectAllFeaturedGames,
     fetchFeaturedGames,

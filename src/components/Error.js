@@ -1,3 +1,4 @@
+// Assets
 import "../assets/css/error.css";
 
 function Error(props) {
