@@ -14,6 +14,7 @@ import {
     clearError,
     deleteUserProfile,
     logoutUser,
+    selectMessage,
     selectUserDetails,
     selectUserError,
 } from "./../features/users/usersSlice";
@@ -25,11 +26,13 @@ function ProfileScreen() {
     const navigate = useNavigate();
 
     // Selectors
-    const userError = useSelector(selectUserError);
     const user = useSelector(selectUserDetails);
+    const userError = useSelector(selectUserError);
+    const successMessage = useSelector(selectMessage);
 
     // State
     const [error, setError] = useState("");
+    const [success, setSuccess] = useState("");
 
     function handleLogout() {
         dispatch(logoutUser());
@@ -50,8 +53,14 @@ function ProfileScreen() {
     useEffect(() => {
         if (userError) {
             setError(userError.response);
+            setSuccess("");
         }
     }, [userError]);
+
+    useEffect(() => {
+        setSuccess(successMessage);
+        setError("");
+    }, [successMessage]);
 
     useEffect(() => {
         if (userError) {
@@ -84,6 +93,7 @@ function ProfileScreen() {
                         </div>
                         <div className="error-centered">
                             {error && <span className="signup__alert__message">{error}</span>}
+                            {success && <span className="signup__success__message">{success}</span>}
                         </div>
                         <div className="user-profile-buttons">
                             <button onClick={handleLogout}>LOGOUT</button>

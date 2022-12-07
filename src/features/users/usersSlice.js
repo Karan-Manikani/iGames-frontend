@@ -6,6 +6,7 @@ const initialState = {
     user: {},
     userStatus: "idle",
     userError: null,
+    message: "",
 };
 
 // Async operations
@@ -169,7 +170,12 @@ const usersSlice = createSlice({
                 const { token } = action.payload;
                 localStorage.setItem("TOKEN", token);
                 setAuthToken(token);
-                return { ...initialState, userStatus: "succeeded", user: action.payload.response };
+                return {
+                    ...initialState,
+                    userStatus: "succeeded",
+                    user: action.payload.response,
+                    message: action.payload.message,
+                };
             })
             // createAndFetchUser Cases
             .addCase(createAndFetchUser.pending, (state, action) => {
@@ -182,7 +188,12 @@ const usersSlice = createSlice({
                 const { token } = action.payload;
                 localStorage.setItem("TOKEN", token);
                 setAuthToken(token);
-                return { ...state, userStatus: "succeeded", user: action.payload.response };
+                return {
+                    ...state,
+                    userStatus: "succeeded",
+                    user: action.payload.response,
+                    message: action.payload.message,
+                };
             })
             // loadProfile Cases
             .addCase(loadProfile.pending, (state, action) => {
@@ -193,7 +204,12 @@ const usersSlice = createSlice({
             })
             .addCase(loadProfile.fulfilled, (state, action) => {
                 if (action.payload) {
-                    return { ...state, userStatus: "succeeded", user: action.payload.response };
+                    return {
+                        ...state,
+                        userStatus: "succeeded",
+                        user: action.payload.response,
+                        message: action.payload.message,
+                    };
                 }
                 return { ...state, userStatus: "idle", user: {} };
             })
@@ -205,7 +221,12 @@ const usersSlice = createSlice({
                 return { ...state, userStatus: "failed", userError: action.payload };
             })
             .addCase(updateProfileInfo.fulfilled, (state, action) => {
-                return { ...state, userStatus: "succeeded", user: action.payload.response };
+                return {
+                    ...state,
+                    userStatus: "succeeded",
+                    user: action.payload.response,
+                    message: action.payload.message,
+                };
             })
             // updatePassword Cases
             .addCase(updatePassword.pending, (state, action) => {
@@ -215,7 +236,7 @@ const usersSlice = createSlice({
                 return { ...state, userStatus: "failed", userError: action.payload };
             })
             .addCase(updatePassword.fulfilled, (state, action) => {
-                return { ...state, userStatus: "succeeded" };
+                return { ...state, userStatus: "succeeded", message: action.payload.response };
             })
             // deleteUserProfile Cases
             .addCase(deleteUserProfile.pending, (state, action) => {
@@ -225,7 +246,7 @@ const usersSlice = createSlice({
                 return { ...state, userStatus: "failed", userError: action.payload };
             })
             .addCase(deleteUserProfile.fulfilled, (state, action) => {
-                return { ...state, userStatus: "idle", user: {} };
+                return { ...state, userStatus: "idle", user: {}, message: action.payload.message };
             })
             // addToWishlist Cases
             .addCase(addToWishlist.pending, (state, action) => {
@@ -235,7 +256,12 @@ const usersSlice = createSlice({
                 return { ...state, userStatus: "failed", userError: action.payload.response };
             })
             .addCase(addToWishlist.fulfilled, (state, action) => {
-                return { ...state, userStatus: "succeeded", user: action.payload.response };
+                return {
+                    ...state,
+                    userStatus: "succeeded",
+                    user: action.payload.response,
+                    message: action.payload.message,
+                };
             })
             // removeFromWishlist Cases
             .addCase(removeFromWishlist.pending, (state, action) => {
@@ -245,7 +271,12 @@ const usersSlice = createSlice({
                 return { ...state, userStatus: "failed", userError: action.payload.response };
             })
             .addCase(removeFromWishlist.fulfilled, (state, action) => {
-                return { ...state, userStatus: "succeeded", user: action.payload.response };
+                return {
+                    ...state,
+                    userStatus: "succeeded",
+                    user: action.payload.response,
+                    message: action.payload.message,
+                };
             })
             // addToCart Cases
             .addCase(addToCart.pending, (state, action) => {
@@ -255,7 +286,12 @@ const usersSlice = createSlice({
                 return { ...state, userStatus: "failed", userError: action.payload.response };
             })
             .addCase(addToCart.fulfilled, (state, action) => {
-                return { ...state, userStatus: "succeeded", user: action.payload.response };
+                return {
+                    ...state,
+                    userStatus: "succeeded",
+                    user: action.payload.response,
+                    message: action.payload.message,
+                };
             })
             // removeFromCart Cases
             .addCase(removeFromCart.pending, (state, action) => {
@@ -265,15 +301,21 @@ const usersSlice = createSlice({
                 return { ...state, userStatus: "failed", userError: action.payload.response };
             })
             .addCase(removeFromCart.fulfilled, (state, action) => {
-                return { ...state, userStatus: "succeeded", user: action.payload.response };
+                return {
+                    ...state,
+                    userStatus: "succeeded",
+                    user: action.payload.response,
+                    message: action.payload.message,
+                };
             });
     },
 });
 
 // Selectors
+export const selectMessage = (state) => state.users.message;
 export const selectUserDetails = (state) => state.users.user;
-export const selectUserStatus = (state) => state.users.userStatus;
 export const selectUserError = (state) => state.users.userError;
+export const selectUserStatus = (state) => state.users.userStatus;
 
 // Reducers
 export const { clearError, logoutUser } = usersSlice.actions;

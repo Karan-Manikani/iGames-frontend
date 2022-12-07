@@ -51,3 +51,11 @@
     align-items: center;
     justify-content: center;
 }
+
+.signup__success__message {
+    width: 70%;
+    text-align: center;
+    margin: 5px auto;
+    color: greenyellow;
+    letter-spacing: 0.5px;
+}
