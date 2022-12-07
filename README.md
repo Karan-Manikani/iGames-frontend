@@ -1,6 +1,5 @@
 # iGames - A Game Store Website
 
-> Frontend source code can be found [here](https://github.com/Karan-Manikani/iGames-frontend) <br>
 > Backend source code can be found [here](https://github.com/Karan-Manikani/iGames-backend/) <br>
 > Live website can be found [here](https://i-games-frontend.vercel.app/)
 
