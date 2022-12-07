@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# iGames - A Game Store Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Frontend source code can be found [here](https://github.com/Karan-Manikani/iGames-frontend) <br>
+> Backend source code can be found [here](https://github.com/Karan-Manikani/iGames-backend/) <br>
+> Live website can be found [here](https://i-games-frontend.vercel.app/)
 
-## Available Scripts
+_Please use a computer to view the website. Mobile compatibility is still a work in progress_
 
-In the project directory, you can run:
+# Introduction
 
-### `npm start`
+iGames is a fullstack game store website built with the MERN stack (MongoDB, Express, React and NodeJS) that allows users to browse games, search games, add games to wishlist and cart, as well as watch gameplays and game trailers for games that are available.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![iGames](https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gMnrbRormW8l0QhMFcW-pt_astcHZiMy5XF-GrQ98tQ6JfEVlEt9Dks3DfeRzlWVltr3RI1CTG4F307OWduxBL62XbTvg=w1920-h990)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Features
 
-### `npm test`
+-   Browse games
+-   Search for games currently available
+-   Watch gameplay and game trailers
+-   Add games to wishlist and/or cart
+-   Summary page for games that are in the cart
+-   Authentication using JWTs
+-   Registration, login, logout and deletion of account
+-   Stay logged in even after closing the app or refreshing the page
+-   Profile information updation capabilities
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Technologies and modules used
 
-### `npm run build`
+This project was created using the following technologies and modules
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Client**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   CSS
+-   React.js
+-   Redux toolkit (for managing and centralizing state)
+-   React-router-dom (to handle routing)
+-   Bootstarp (for making the carousel)
+-   Axios (for making api calls)
+-   HTML-react-parser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Server**
 
-### `npm run eject`
+-   Express
+-   NodeJS
+-   Mongoose
+-   Bcrypt (for data encryption)
+-   Jsonwebtoken (for authentication)
+-   Passport (for authentication)
+-   Dotenv (for managing environment variables)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Database**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-   MongoDB (MongoDB Atlas)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Author
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Created by Karan Manikani
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[<img src='https://camo.githubusercontent.com/c8a9c5b414cd812ad6a97a46c29af67239ddaeae08c41724ff7d945fb4c047e5/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6c696e6b6564696e2e737667' alt='linkedin' height='40'>](https://www.linkedin.com/in/karan-manikani/)
+[<img src='https://camo.githubusercontent.com/b079fe922f00c4b86f1b724fbc2e8141c468794ce8adbc9b7456e5e1ad09c622/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6769746875622e737667' alt='linkedin' height='40'>](https://github.com/Karan-Manikani/)
