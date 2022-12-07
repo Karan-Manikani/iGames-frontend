@@ -1,0 +1,9 @@
+.no-results-message-buy {
+    color: #808080;
+    margin: 0;
+}
+
+.no-results-message-buy:hover {
+    color: white;
+    cursor: pointer;
+}

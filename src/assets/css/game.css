@@ -1,0 +1,142 @@
+.game {
+    margin: 2rem auto 0rem;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+}
+.game-banner-container {
+    background-color: lightgray;
+    border-radius: 30px;
+}
+
+.game-banner {
+    width: 100%;
+    border-radius: 30px;
+    height: 20vw;
+}
+
+.game-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.game-title {
+    margin: 15px 0 5px 20px;
+    font-size: 1.4rem;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.game-title-link {
+    text-decoration: none;
+    color: white;
+}
+
+.game-desc {
+    margin: 0 20px;
+    text-align: justify;
+    color: darkgray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    font-size: 1rem;
+}
+
+.price {
+    font-size: 1.4rem;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.platforms > ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.platforms > ul > li {
+    display: inline;
+    padding: 0px 8px;
+}
+
+.platform-logo {
+    display: inline;
+    width: 1.3rem;
+}
+
+.game-title:hover,
+.game-title-link:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.game-banner:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.platforms > ul > li:last-child {
+    display: inline;
+    padding: 0 0 0 8px;
+}
+
+@media (max-width: 1160px) {
+    .game {
+        width: 80%;
+    }
+
+    .game-banner {
+        height: 42vw;
+    }
+}
+
+@media (max-width: 760px) {
+    .game-title,
+    .price {
+        font-size: 1.3rem;
+    }
+
+    .game-desc {
+        font-size: 0.9rem;
+    }
+
+    .platform-logo {
+        width: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .game-title,
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .game-desc {
+        font-size: 0.8rem;
+    }
+
+    .platform-logo {
+        width: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .game-title,
+    .price {
+        font-size: 1rem;
+    }
+
+    .game-desc {
+        font-size: 0.6rem;
+    }
+
+    .platform-logo {
+        width: 0.8rem;
+    }
+}

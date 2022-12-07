@@ -1,0 +1,237 @@
+.product {
+    width: 80%;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    margin: 0px auto;
+}
+
+.product-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.product-header-browse {
+    color: gray;
+    font-size: 1.1rem;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+}
+
+.carousel-info {
+    margin: 0px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.render-images {
+    width: 70%;
+    height: 30vw;
+    margin: 20px 0px;
+}
+
+.product-banner {
+    width: 100%;
+    height: 30vw;
+    border-radius: 20px;
+}
+
+.cart-game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 27%;
+}
+
+.game-price {
+    margin: 0;
+}
+
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-actions > button {
+    margin: 8px 0;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+.cart-actions > button:hover {
+    background-color: white;
+    color: #121212;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.split-info {
+    padding: 3px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.product-platforms > ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.product-platforms > ul > li {
+    display: inline;
+    padding: 0px 5px;
+}
+
+.product-platforms > ul > li:last-child {
+    padding: 0 0 0 5px;
+}
+
+.product-platform-logo {
+    width: 1.1rem;
+}
+
+.videos-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.genres-desc {
+    width: 70%;
+    color: darkgrey;
+}
+
+.product-description {
+    width: 100%;
+    text-align: justify;
+    color: darkgray;
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+}
+
+.videos > button {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+}
+
+.videos > button:hover {
+    background-color: white;
+    color: #121212;
+}
+
+@media (max-width: 1000px) {
+    .carousel-info {
+        flex-direction: column;
+    }
+
+    .render-images {
+        width: 100%;
+        height: 40vw;
+    }
+
+    .product-banner {
+        height: 40vw;
+    }
+
+    .cart-game-info {
+        width: 100%;
+    }
+
+    .game-price {
+        text-align: right;
+    }
+
+    .videos-desc {
+        flex-direction: column;
+    }
+
+    .genres-desc {
+        width: 100%;
+    }
+
+    .videos {
+        width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    .product > h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .product > h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .product > h1 {
+        font-size: 1.3rem;
+    }
+
+    .cart-actions > button {
+        font-size: 0.9rem;
+    }
+
+    .videos > button {
+        font-size: 0.9rem;
+    }
+
+    .split-info {
+        font-size: 0.8rem;
+    }
+
+    .genres-desc {
+        font-size: 0.8rem;
+    }
+
+    .product-platform-logo {
+        width: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .product > h1 {
+        font-size: 1.1rem;
+    }
+
+    .cart-actions > button {
+        font-size: 0.8rem;
+    }
+
+    .videos > button {
+        font-size: 0.8rem;
+    }
+
+    .split-info {
+        font-size: 0.7rem;
+    }
+
+    .genres-desc {
+        font-size: 0.7rem;
+    }
+
+    .product-platform-logo {
+        width: 0.8rem;
+    }
+}

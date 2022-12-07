@@ -1,0 +1,53 @@
+.user-profile {
+    width: 80%;
+    margin: 20px auto;
+    font-family: "Nunito", sans-serif;
+    color: white;
+}
+
+.user-changables {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.user-info {
+    width: 31%;
+    background-color: #2a2a2a;
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+
+.user-profile-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.user-profile-buttons > button {
+    width: 47%;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+}
+
+.user-profile-buttons > button:hover {
+    background-color: white;
+    color: black;
+}
+
+.delete:hover {
+    background-color: rgb(255, 0, 17);
+}
+
+.error-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

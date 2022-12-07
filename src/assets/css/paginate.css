@@ -1,0 +1,37 @@
+.paginate {
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+}
+
+.next,
+.prev,
+.disabled {
+    font-size: 2rem;
+}
+
+.page-number {
+    color: white;
+    padding: 0px 30px;
+}
+
+.next:hover,
+.prev:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.disabled {
+    color: transparent;
+    user-select: none;
+}
+
+.disabled:hover {
+    color: transparent;
+    cursor: default;
+}

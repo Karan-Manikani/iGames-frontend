@@ -1,0 +1,116 @@
+header {
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.logo__text {
+    color: white;
+    font-family: "Smooch Sans", cursive;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.logo__text:hover {
+    cursor: pointer;
+}
+
+.user-links {
+    display: flex;
+    align-items: center;
+}
+
+.cart-links {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.wishlist,
+.cart {
+    font-size: 20px;
+    color: gray;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+}
+
+.wishlist:hover,
+.cart:hover {
+    cursor: pointer;
+}
+
+.user__info {
+    margin-right: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.user__info:hover {
+    cursor: pointer;
+}
+
+.user__info:hover .md-dark,
+.user__info:hover .user__name__signup,
+.wishlist:hover,
+.cart:hover {
+    color: white;
+}
+
+.user__name__signup {
+    font-size: 20px;
+    color: gray;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.material-symbols-rounded.md-dark {
+    color: gray;
+    font-size: 1.75rem;
+}
+
+@media (max-width: 760px) {
+    .user-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+        margin-right: 30px;
+        font-size: 3rem;
+        color: white;
+    }
+
+    .logo__text {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo__text {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo__text {
+        font-size: 1.5rem;
+    }
+}

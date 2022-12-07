@@ -1,0 +1,42 @@
+.search-links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 35px 0;
+    justify-content: space-between;
+}
+
+.browse-games {
+    color: gray;
+    font-size: 1.1rem;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    margin-left: 85%;
+    margin-top: 3px;
+}
+
+.browse-games:hover {
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 760px) {
+    .browse-games {
+        font-size: 1rem;
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .browse-games {
+        font-size: 0.8rem;
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .browse-games {
+        font-size: 0.7rem;
+        margin-left: 150px;
+    }
+}

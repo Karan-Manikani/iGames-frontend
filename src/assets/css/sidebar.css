@@ -1,0 +1,87 @@
+.sidebar-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-size: 1.3rem;
+    position: fixed;
+    top: 72;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 72px);
+    z-index: 5;
+    transform: translateX(100%);
+}
+
+.open {
+    transform: translateX(0);
+    background-color: #2a2a2a;
+}
+
+.sidebar-cart-links {
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.hamburger-menu {
+    margin-top: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    z-index: 6;
+}
+
+.sidebar-signin {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+    color: gray;
+    height: 4rem;
+}
+
+.sidebar-person {
+    font-size: 1.8rem;
+    padding-right: 10px;
+}
+
+@media (max-width: 760px) {
+    .hamburger-menu {
+        display: inline-block;
+        margin-right: 30px;
+        font-size: 3rem;
+        color: white;
+    }
+}
+
+@media (min-width: 760px) {
+    .sidebar-contents {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar-contents {
+        font-size: 1.2rem;
+    }
+    .sidebar-person {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar-contents {
+        font-size: 1.1rem;
+    }
+    .sidebar-person {
+        font-size: 1.6rem;
+    }
+}

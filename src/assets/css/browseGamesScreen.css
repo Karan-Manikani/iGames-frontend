@@ -1,0 +1,48 @@
+.browse-games-screen {
+    width: 80%;
+    margin: 30px auto 0px;
+}
+
+.browse-search-links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search-button {
+    margin-left: 400px;
+    color: gray;
+    font-size: 1.1rem;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    margin-top: 3px;
+}
+
+.search-button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.games-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 4rem;
+}
+
+@media (max-width: 1160px) {
+    .browse-games-screen {
+        margin: 30px auto 40px;
+        width: 100%;
+    }
+
+    .games-grid {
+        display: inline;
+        width: 100%;
+    }
+
+    .browse-search-links {
+        width: 80%;
+        margin: 30px auto 0px;
+    }
+}

@@ -1,0 +1,65 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    width: 400px;
+    position: absolute;
+    background-color: #2a2a2a;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px 5px 35px;
+    z-index: 0;
+    height: 2rem;
+    font-size: 1.1rem;
+    font-family: "Nunito", sans-serif;
+}
+
+.search-icon {
+    position: relative;
+    left: 8px;
+    z-index: 1;
+    font-size: 1.1rem;
+    color: gray;
+}
+
+@media (max-width: 760px) {
+    .search-box {
+        width: 300px;
+        height: 1.9rem;
+        font-size: 1rem;
+        padding-left: 30px;
+    }
+
+    .search-icon {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .search-box {
+        width: 200px;
+        height: 1.8rem;
+        font-size: 0.9rem;
+        padding-left: 27px;
+    }
+
+    .search-icon {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .search-box {
+        width: 150px;
+        height: 1.7rem;
+        font-size: 0.8rem;
+        padding-left: 24px;
+    }
+
+    .search-icon {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,19 @@
+.svg {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.svg-link {
+    color: gray;
+}
+
+.svg-link:hover {
+    color: white;
+}
