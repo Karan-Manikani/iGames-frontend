@@ -9,7 +9,7 @@ _Please use a computer to view the website. Mobile compatibility is still a work
 
 iGames is a fullstack game store website built with the MERN stack (MongoDB, Express, React and NodeJS) that allows users to browse games, search games, add games to wishlist and cart, as well as watch gameplays and game trailers for games that are available.
 
-![iGames](https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gMnrbRormW8l0QhMFcW-pt_astcHZiMy5XF-GrQ98tQ6JfEVlEt9Dks3DfeRzlWVltr3RI1CTG4F307OWduxBL62XbTvg=w1920-h990)
+![iGames](https://i.ibb.co/yPfBvkD/Screenshot-2022-12-07-204145.png)
 
 # Features
 
